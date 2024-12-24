@@ -1,32 +1,31 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
+    margin: 0;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
     background-color: #dcbeb5;
 }
 
 .calculator {
-    background-color: #333;
+    width: 300px;
+    background-color: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
 }
 
 .display {
-    background-color: #fff;
-    padding: 10px;
+    width: 100%;
+    height: 60px;
     margin-bottom: 20px;
-    text-align: right;
+    background-color: white;
+    border: none;
     border-radius: 5px;
+    text-align: right;
     font-size: 24px;
-    height: 50px;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .buttons {
@@ -41,35 +40,42 @@ button {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    background-color: #000000;
+    background-color: black;
     color: white;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
     transition: all 0.1s ease;
 }
 
-/* Hover effect for black buttons */
 button:hover {
-    background-color: #1a1a1a;
+    background-color: #333333;
 }
 
-/* Click animation for all buttons */
 button:active {
     transform: scale(0.95);
 }
 
-/* Styling for rightmost column buttons */
-button:nth-child(4),
-button:nth-child(8),
-button:nth-child(12),
-button:nth-child(16),
-button:nth-child(20) {
-    background-color: #f4a78c;
+.operator {
+    background-color: #e97b6b;
 }
 
-button:nth-child(4):hover,
-button:nth-child(8):hover,
-button:nth-child(12):hover,
-button:nth-child(16):hover,
-button:nth-child(20):hover {
+.operator:hover {
     opacity: 0.9;
-    background-color: #f4a78c;
+    background-color: #e97b6b;
+}
+
+.equals {
+    background-color: #e97b6b;
+}
+
+.equals:hover {
+    opacity: 0.9;
+    background-color: #e97b6b;
+}
+
+.clear, .backspace {
+    background-color: black;
+}
+
+.clear:hover, .backspace:hover {
+    background-color: #333333;
 }
