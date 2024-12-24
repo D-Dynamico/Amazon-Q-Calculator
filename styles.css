@@ -12,7 +12,7 @@ body {
     background-color: #1a1a1a;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
 
 .display {
@@ -72,10 +72,16 @@ button:active {
     background-color: #e97b6b;
 }
 
-.clear, .backspace {
+.clear,
+.percentage,
+.plusMinus,
+.backspace {
     background-color: black;
 }
 
-.clear:hover, .backspace:hover {
+.clear:hover,
+.percentage:hover,
+.plusMinus:hover,
+.backspace:hover {
     background-color: #333333;
 }
